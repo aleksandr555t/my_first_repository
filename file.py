@@ -28,7 +28,9 @@ class User:
 
 
 def get_user_info(user):
-    return f"{user.name} is {user.age} and his email is {user.email}. User_ID: {user.id}"
+    return (
+        f"{user.name} is {user.age} and his email is {user.email}. User_ID: {user.id}"
+    )
 
 
 user1 = User("1_id", "Max", 42, "max@email.com")
@@ -44,8 +46,10 @@ class Car:
     name: str
     model: str
 
+
 def car_info(car):
     return f"Car info:  #: {car.id}, name: {car.name}, model: {car.model}"
+
 
 car_1 = Car("555", "bmw", "M5")
 print(car_info(car_1))
